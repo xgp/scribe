@@ -1,0 +1,7 @@
+# Scribe utilities
+- scribe-thrift: generated Java for Scribe and fb303 thrift
+- logback-scribe-appender: an appender for Logback that sends events to Scribe
+- scribe-server: simple demo Scribe server, in Java, configured via Logback
+- flume-scribe-sink: a Scribe sink for Flume, derived from https://github.com/streamz/flume-ng-scribe
+
+http://www.apache.org/licenses/LICENSE-2.0

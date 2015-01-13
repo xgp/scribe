@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.xgp</groupId>
+  <artifactId>flume-scribe-sink</artifactId>
+  <packaging>jar</packaging>
+  <name>flume-scribe-sink</name>
+
+  <parent>
+    <groupId>com.github.xgp</groupId>
+    <artifactId>scribe</artifactId>
+    <version>0.9.0-SNAPSHOT</version>
+  </parent>
+
+  <!--
+  <build>
+    <plugins>
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-surefire-plugin</artifactId>
+	<version>2.18.1</version>
+	<configuration>
+	  <skipTests>true</skipTests>
+	</configuration>
+      </plugin>
+    </plugins>
+  </build>
+  -->
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.github.xgp</groupId>
+      <artifactId>scribe-thrift</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flume</groupId>
+      <artifactId>flume-ng-core</artifactId>
+      <version>${flume.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flume</groupId>
+      <artifactId>flume-ng-sdk</artifactId>
+      <version>${flume.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flume</groupId>
+      <artifactId>flume-ng-configuration</artifactId>
+      <version>${flume.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.thrift</groupId>
+      <artifactId>libthrift</artifactId>
+      <version>${libthrift.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flume.flume-ng-clients</groupId>
+      <artifactId>flume-ng-log4jappender</artifactId>
+      <version>${flume.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <flume.version>1.5.2</flume.version>
+  </properties>
+
+</project>

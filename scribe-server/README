@@ -1,0 +1,8 @@
+A pure Java [scribe](https://github.com/facebookarchive/scribe) server, configured as [logback](http://logback.qos.ch/) appenders. This is just an experiment to show that with a buffered scribe logback appender, you can have 80% of the functionality of scribed in very little (new) code.
+
+Run:
+
+    java scribe.Scribed -port 1463 -config logback.xml
+
+Example config:
+
